@@ -24,9 +24,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/vendor/vendor.min.css",
+              "src/assets/css/plugins/plugins.min.css",
+              "src/assets/css/style.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/vendor/vendor.min.js",
+              "src/assets/js/plugins/plugins.min.js",
+              "src/assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "methodexConsulting"
+    }
+  },
+  "defaultProject": "methodexConsulting",
+  "cli": {
+    "analytics": false
+  }
 }
