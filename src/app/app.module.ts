@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-import { BlogModule } from './pages/blog/blog.module';
 import { HeaderComponent } from './layouts/header/header.component';
 
 @NgModule({
@@ -18,7 +18,8 @@ import { HeaderComponent } from './layouts/header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BlogModule
+    LoadingBarRouterModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
